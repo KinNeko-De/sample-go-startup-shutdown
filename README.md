@@ -11,3 +11,4 @@ The samples listen for:
 The samples should be reviewed in this order:
 
 1. [**nothing**](cmd/nothing/README.md) - Simple startup and graceful shutdown using a channel
+2. [**context**](cmd/context/README.md) - Simple startup and graceful shutdown using a context
