@@ -12,3 +12,4 @@ The samples should be reviewed in this order:
 
 1. [**nothing**](cmd/nothing/README.md) - Simple startup and graceful shutdown using a channel
 2. [**context**](cmd/context/README.md) - Simple startup and graceful shutdown using a context
+2. [**grpc**](cmd/grpc/README.md) - Startup and graceful shutdown of a gRPC server with health probe
