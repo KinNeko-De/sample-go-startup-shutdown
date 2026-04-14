@@ -1,0 +1,1 @@
+docker compose -f postgres/posgres.yaml up --detach --remove-orphans

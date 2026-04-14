@@ -1,0 +1,22 @@
+name: sample-postgres
+
+services:
+  postgres:
+    image: postgres
+    container_name: sample-postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - sample_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_DATABASE}"]
+      interval: 1s
+      timeout: 3s
+      start_period: 5s
+      retries: 5
+volumes:
+  sample_postgres_data:

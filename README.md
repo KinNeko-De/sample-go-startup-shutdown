@@ -14,3 +14,4 @@ The samples should be reviewed in this order:
 2. [**context**](cmd/context/README.md) - Simple startup and graceful shutdown using a context
 2. [**grpc**](cmd/grpc/README.md) - Startup and graceful shutdown of a gRPC server with health probe
 2. [**grpc-http**](cmd/grpc-http/README.md) - Startup and graceful shutdown of a gRPC and http server
+2. [**grpc-sql**](cmd/grpc-sql/README.md) - Startup and graceful shutdown of a gRPC and a sql server (here Postrges)
